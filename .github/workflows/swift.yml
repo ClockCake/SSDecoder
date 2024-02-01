@@ -15,6 +15,6 @@ jobs:
     - name: Select Xcode version
       run: sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
     - name: Install dependencies
-      run: swift package resolve  # 安装Swift项目的依赖
+      run: swift package resolve  # 安装Swift项目的依赖  pod install / swift package resolve
     - name: Run tests
       run: swift test  # 运行单元测试
