@@ -14,7 +14,18 @@
 		083FA67D2B0226400013CEDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 083FA67C2B0226400013CEDE /* Assets.xcassets */; };
 		083FA6802B0226400013CEDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 083FA67E2B0226400013CEDE /* LaunchScreen.storyboard */; };
 		08F904E32B6B9B4F004204CC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 08F904E22B6B9B4F004204CC /* SnapKit */; };
+		08F904ED2B6BA15C004204CC /* SSDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F904EC2B6BA15C004204CC /* SSDecoderTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08F904EE2B6BA15C004204CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 083FA6682B02263F0013CEDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 083FA66F2B02263F0013CEDE;
+			remoteInfo = SSDecoder;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		083FA6702B02263F0013CEDE /* SSDecoder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSDecoder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +37,8 @@
 		083FA67F2B0226400013CEDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		083FA6812B0226400013CEDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08A5B5022B32E55D004C41E4 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
+		08F904EA2B6BA15C004204CC /* SSDecoderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSDecoderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08F904EC2B6BA15C004204CC /* SSDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSDecoderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +50,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		08F904E72B6BA15C004204CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -44,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				083FA6722B02263F0013CEDE /* SSDecoder */,
+				08F904EB2B6BA15C004204CC /* SSDecoderTests */,
 				083FA6712B02263F0013CEDE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				083FA6702B02263F0013CEDE /* SSDecoder.app */,
+				08F904EA2B6BA15C004204CC /* SSDecoderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +91,14 @@
 				083FA6812B0226400013CEDE /* Info.plist */,
 			);
 			path = SSDecoder;
+			sourceTree = "<group>";
+		};
+		08F904EB2B6BA15C004204CC /* SSDecoderTests */ = {
+			isa = PBXGroup;
+			children = (
+				08F904EC2B6BA15C004204CC /* SSDecoderTests.swift */,
+			);
+			path = SSDecoderTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +124,24 @@
 			productReference = 083FA6702B02263F0013CEDE /* SSDecoder.app */;
 			productType = "com.apple.product-type.application";
 		};
+		08F904E92B6BA15C004204CC /* SSDecoderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08F904F02B6BA15C004204CC /* Build configuration list for PBXNativeTarget "SSDecoderTests" */;
+			buildPhases = (
+				08F904E62B6BA15C004204CC /* Sources */,
+				08F904E72B6BA15C004204CC /* Frameworks */,
+				08F904E82B6BA15C004204CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08F904EF2B6BA15C004204CC /* PBXTargetDependency */,
+			);
+			name = SSDecoderTests;
+			productName = SSDecoderTests;
+			productReference = 08F904EA2B6BA15C004204CC /* SSDecoderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -101,11 +149,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
+				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					083FA66F2B02263F0013CEDE = {
 						CreatedOnToolsVersion = 15.0.1;
+					};
+					08F904E92B6BA15C004204CC = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 083FA66F2B02263F0013CEDE;
 					};
 				};
 			};
@@ -126,6 +178,7 @@
 			projectRoot = "";
 			targets = (
 				083FA66F2B02263F0013CEDE /* SSDecoder */,
+				08F904E92B6BA15C004204CC /* SSDecoderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +191,13 @@
 				083FA6802B0226400013CEDE /* LaunchScreen.storyboard in Resources */,
 				083FA67D2B0226400013CEDE /* Assets.xcassets in Resources */,
 				083FA67B2B02263F0013CEDE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08F904E82B6BA15C004204CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +214,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		08F904E62B6BA15C004204CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08F904ED2B6BA15C004204CC /* SSDecoderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08F904EF2B6BA15C004204CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 083FA66F2B02263F0013CEDE /* SSDecoder */;
+			targetProxy = 08F904EE2B6BA15C004204CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		083FA6792B02263F0013CEDE /* Main.storyboard */ = {
@@ -351,6 +427,44 @@
 			};
 			name = Release;
 		};
+		08F904F12B6BA15C004204CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4V8M6B9A6S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Apple.Inc.SSDecoderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSDecoder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SSDecoder";
+			};
+			name = Debug;
+		};
+		08F904F22B6BA15C004204CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4V8M6B9A6S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Apple.Inc.SSDecoderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSDecoder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SSDecoder";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -368,6 +482,15 @@
 			buildConfigurations = (
 				083FA6852B0226400013CEDE /* Debug */,
 				083FA6862B0226400013CEDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08F904F02B6BA15C004204CC /* Build configuration list for PBXNativeTarget "SSDecoderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08F904F12B6BA15C004204CC /* Debug */,
+				08F904F22B6BA15C004204CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
