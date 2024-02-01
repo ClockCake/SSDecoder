@@ -14,7 +14,12 @@ jobs:
     - uses: actions/checkout@v2  # 检出您的代码到运行环境
     - name: Select Xcode version
       run: sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
-    - name: Install dependencies
-      run: swift package resolve  # 安装Swift项目的依赖  pod install / swift package resolve
-    - name: Run tests
-      run: swift test  # 运行单元测试
+    - name: Build and Test
+      run: xcodebuild -project SSDecoder.xcodeproj -scheme YourScheme build test | xcpretty
+#   - name: Install Pods
+#   run: |
+#     gem install cocoapods
+#     pod install
+# - name: Build and Test
+#   run: xcodebuild -workspace YourWorkspace.xcworkspace -scheme YourScheme build test | xcpretty
+
