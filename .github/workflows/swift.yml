@@ -15,7 +15,7 @@ jobs:
     - name: Select Xcode version
       run: sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
     - name: Build and Test
-      run: xcodebuild -project SSDecoder.xcodeproj -scheme YourScheme build test | xcpretty
+      run: xcodebuild -project SSDecoder.xcodeproj -scheme SSDecoder build test | xcpretty
 #   - name: Install Pods
 #   run: |
 #     gem install cocoapods
