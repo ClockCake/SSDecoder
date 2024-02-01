@@ -1,0 +1,14 @@
+name: Swift
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: macOS-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: swift package resolve
+    - name: Run tests
+      run: swift test
