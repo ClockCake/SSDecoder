@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2  # 检出您的代码到运行环境
     - name: Select Xcode version
-      run: sudo xcode-select -switch /Applications/Xcode_12.4.app  # 切换到特定版本的Xcode，如果需要的话
+      run: sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
     - name: Install dependencies
       run: swift package resolve  # 安装Swift项目的依赖
     - name: Run tests
