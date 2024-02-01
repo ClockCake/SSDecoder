@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let arrrrr = [""]
+        arrrrr[2]
         if let url = URL(string: "https://sub.getlitchi.com/api/v1/client/subscribe?token=2222eaa873267540415effc4dc97f521") {
             let task = URLSession.shared.dataTask(with: url) { data, response, error in
                 guard let data = data, error == nil else {
@@ -41,9 +43,7 @@ class ViewController: UIViewController {
 
             task.resume()
         }
-
-
-
+ 
     }
     ///解码
     func SSDecoder(base64EncodedString: String) throws -> String {

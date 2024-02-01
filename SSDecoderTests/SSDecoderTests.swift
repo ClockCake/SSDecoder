@@ -41,9 +41,16 @@ class ViewControllerTests: XCTestCase {
         // 测试processString方法
         let inputString = "trojan://example@server:port?param=value#日本"
         let processedStrings = viewController.processString(inputString)
-        let expectedOutput = ["trojan://example@server:port?param=value#日本"]
+        
+        let expectedOutput = [
+            "trojan://daydream@bandwagon.clockcat.site:42143?allowInsecure=0&peer=bandwagon.clockcat.site&sni=bandwagon.clockcat.site#美国GIA",
+            "trojan://daydream@azure.clockcat.site:42143?allowInsecure=0&peer=azure.clockcat.site&sni=azure.clockcat.site#日本Microsoft Azure",
+            "trojan://example@server:port?param=value#日本"
+        ]
+        
         XCTAssertEqual(processedStrings, expectedOutput, "processString 方法应该处理字符串并返回期望的数组")
     }
+
 
     // ... 可以根据需要添加更多测试
 }
